@@ -21,7 +21,7 @@ The Core Java  exception-handling-booking-management-project is a basic Java app
 ## **Steps**
 - Clone the repository:
   ```shell
-   git clone %%% "git@github.com:shreyamahalle/collection-booking-management-project.git" 
+   git clone %%% "git@github.com:shreyamahalle/exception-handling-booking-management-project.git" 
 - Navigate to the project directory:
 - cd core-java-if-booking-project
 - Open the project in your preferred IDE.
