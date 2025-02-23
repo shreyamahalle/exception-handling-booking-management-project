@@ -1,4 +1,8 @@
 package com.using.hashset;
+import com.using.hashset.controller.CustomerController;
+import com.using.hashset.controller.DeliveryAgentController;
+import com.using.hashset.controller.OrderController;
+import com.using.hashset.controller.RestaurantController;
 import com.using.hashset.model.Customer;
 import com.using.hashset.model.DeliveryAgent;
 import com.using.hashset.model.Order;
@@ -30,17 +34,21 @@ public class BookingOrderManagement {
 
             switch (option) {
                 case 1:
+                    CustomerController customerController = new CustomerController();
                     CustomerService customerService = new CustomerService();
-                    customerService.createCustomer();
                     Customer customer = new Customer();
+                    customerController.data();
+                    customerService.createCustomer();
                     customerService.displayCustomers();
                     System.out.println("Customer created : " + customer);
                     break;
             }
             switch (option) {
                 case 2:
+                    DeliveryAgentController deliveryAgentController = new DeliveryAgentController();
                     DeliveryAgentService deliveryAgentService = new DeliveryAgentService();
                     deliveryAgentService.createDeliveryAgent();
+                    deliveryAgentController.deliveryInfo();
                     DeliveryAgent deliveryAgent = new DeliveryAgent();
                     deliveryAgentService.displayDeliveryAgent();
                     deliveryAgentService.createDeliveryAgent();
@@ -49,17 +57,21 @@ public class BookingOrderManagement {
             }
             switch (option) {
                 case 3:
+                    OrderController orderController = new OrderController();
                     OrderService orderService = new OrderService();
+                    orderController.orderInfo();
                     orderService.createOrder();
                     Order order = new Order();
-                    orderService.displayCustomers();
+                    orderService.displayOrder();
                     orderService.createOrder();
                     System.out.println("Order created : " + order);
                     break;
             }
             switch (option) {
                 case 4:
+                    RestaurantController restaurantController = new RestaurantController();
                     RestaurantService restaurantService = new RestaurantService();
+                    restaurantController.restaurantInfo();
                     restaurantService.createRestaurant();
                     Restaurant restaurant = new Restaurant();
                     restaurantService.displayRestaurant();

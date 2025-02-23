@@ -1,19 +1,18 @@
 package com.using.hashset.service;
 
-import com.using.hashset.model.Order;
 import com.using.hashset.model.Restaurant;
 
 import java.util.*;
 
 public class RestaurantService {
-    private HashMap<Integer,Restaurant> restaurants = new HashMap<>();
-    private Scanner sc = new Scanner(System.in);
+    private static HashMap<Integer,Restaurant> restaurants = new HashMap<>();
+    private static Scanner sc = new Scanner(System.in);
 
     void printCustomer(Restaurant r){
 
         System.out.println(r);
     }
-    public Restaurant createRestaurant(){
+    public static void createRestaurant(){
 
             Restaurant r = new Restaurant();
 
@@ -39,9 +38,8 @@ public class RestaurantService {
             }catch (Exception e){
                 System.out.println("Invalid input type correct data");
             }
-            return r;
-        }
-    public void displayRestaurant(){
+    }
+    public static void displayRestaurant(){
         try {
             Set<Map.Entry<Integer, Restaurant>> entrySet = restaurants.entrySet();
             for (Map.Entry<Integer, Restaurant> customerEntry : entrySet) {

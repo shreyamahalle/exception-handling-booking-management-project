@@ -39,7 +39,7 @@ public class OrderService {
             }
             return o;
         }
-    public void displayCustomers(){
+    public void displayOrder(){
         try {
             Set<Map.Entry<Integer, Order>> entrySet = orders.entrySet();
             for (Map.Entry<Integer, Order> customerEntry : entrySet) {
