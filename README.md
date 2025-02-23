@@ -56,6 +56,14 @@ The Core Java  exception-handling-booking-management-project is a basic Java app
 -Order - (id, type, note, paymentMethod;)
 -Restaurant - (registerNo, name, City, Area;)
 
+## **📝 Database Schema (POJO Classes)**
+| **Entity**          | **Attributes** |
+|---------------------|----------------------------------------------------------|
+| **Customer**           | user id, name, username,monbileNo,city,area |
+| **DeliveryAgent**          | id, name, city, mobileNo |
+| **Order**         | id, name, city, mobileNo |
+| **Restaurant**        |registerNo, name, City, Area |
 
+---
 
 
