@@ -44,7 +44,7 @@ public class BookingOrderManagement {
                     DeliveryAgent deliveryAgent = new DeliveryAgent();
                     deliveryAgentService.displayDeliveryAgent();
                     deliveryAgentService.createDeliveryAgent();
-                    //System.out.println("DeliveryAgent created : " + deliveryAgent);
+                    System.out.println("DeliveryAgent created : " + deliveryAgent);
                     break;
             }
             switch (option) {
