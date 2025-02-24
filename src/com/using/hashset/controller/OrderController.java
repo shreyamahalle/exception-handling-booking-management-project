@@ -43,6 +43,8 @@ public class OrderController {
                 }
             } catch (CustomerException e) {
                 System.out.println("Error: " + e.getClass());
+            } finally {
+                System.out.println("All Good ");
             }
         } while (option != 0);
     }
